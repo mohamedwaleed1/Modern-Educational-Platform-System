@@ -1,0 +1,40 @@
+from tkinter import *
+pro=Tk()
+pro.geometry('500x500')
+pro.title('LOGIEN SYSTEM')
+pro.resizable(False,False)
+pro.config(background='green')
+pro.iconbitmapf('C:\\Users\\alla\Desktop\\ahlylogo7002014_2_22_16_33.jpg')
+
+title=Label(pro,='LOGIEN SYSTEM',font=15,bg='black',fg='white')
+title.pack(fill=X)
+
+fr1=Frame(pro,width='300',height='350',bg='#ffdab9')
+fr1.pack(pady=30)
+
+
+lb1=Label(fr1,='USER NAME',font=15,bg='whitesmoke')
+lb1.place(x=10,y=100)
+
+lb2=Label(fr1,='PASSWORD',font=15,bg='whitesmoke')
+lb2.place(x=10,y=180)
+
+en1=Entry(fr1)
+en1.place(x=134,y=145)
+
+en2=Entry(fr1)
+en2.place(x=134,y=185)
+
+bt1=Button(fr1,='LOGIN',font=15,bg='whitesmoke',width=11)
+bt1.place(x=15,y=260)
+
+bt2=Button(fr1,='SIGN IN',font=15,bg='whitesmoke',width=11)
+bt2.place(x=155,y=260)
+
+c1=Checkbutton(fr1,='FORGET PASSWORD',font=15,bg='whitesmoke')
+c1.place(x=40,y=220)
+
+c2=Label(fr1,='DEVLOPED BY ALLA',font=12,bg='whitesmoke')
+c2.place(x=60,y=320)
+        
+pro.mainloop()
